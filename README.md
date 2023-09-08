@@ -51,17 +51,7 @@ def chack_mail(mail=''):
                                 file.write(f'Sender: {sender}\nTo: {mail}\nSubject: {subject}\nDate: {date}\nContent: {content}')
 
 
-#def delete_mail(mail=''):
-#       url = 'https://www.1secmail.com/mailbox'
 
-#       data = {
-#               'action': 'deleteMailbox',
-#               'login': mail.split('@')[0],
-#               'domain': mail.split('@')[1]
-#       }
-
-#       r = requests.post(url, data=data)
-#       print(f'[∆] mail {mail} dlt\n')
 
 def main():
         try:
@@ -74,7 +64,7 @@ def main():
                         time.sleep(5)
                         chack_mail(mail=mail)
         except(KeyboardInterrupt):
-#               delete_mail(mail=mail)
+
                 print('dclxcc')
 
 if __name__ == '__main__':
